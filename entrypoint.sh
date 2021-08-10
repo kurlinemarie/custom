@@ -2,7 +2,7 @@
 set -e
 
 # if keyword is found
-if [-f ./hello.py];
+if [ -f ./hello.py ];
 then
     # do something
     echo "Found keyword."

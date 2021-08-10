@@ -2,6 +2,7 @@
 set -e
 
 # if keyword is found
+ls -alt
 if [ -f ./hello.py ];
 then
     # do something

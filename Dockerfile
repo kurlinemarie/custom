@@ -1,7 +1,11 @@
-FROM python 3.8
+FROM alpine
 
-WORKDIR /app
+RUN apk add --no-cache \
+        bash \
+        python3 \
+        which bash 
+
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
-COPY hello.py /usr/local/bin/hello.py
+COPY hello.py /hello.py
 
 ENTRYPOINT ["entrypoint.sh"]

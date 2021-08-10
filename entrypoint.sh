@@ -2,7 +2,7 @@
 set -e
 
 # if keyword is found
-if echo "$*" | grep -i -q MYKEYWORD;
+if [-f ./hello.py];
 then
     # do something
     echo "Found keyword."

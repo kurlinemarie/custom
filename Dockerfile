@@ -8,5 +8,6 @@ RUN apk add --no-cache \
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod 777 entrypoint.sh
 COPY hello.py /hello.py
+RUN chmod 777 hello.py
 
 ENTRYPOINT ["/entrypoint.sh"]
